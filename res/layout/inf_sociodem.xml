@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TableLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:stretchColumns="0,1,2"
+	   	android:background="#AEDD94"	>
+
+	    <LinearLayout
+	        android:orientation="vertical" >
+	        
+	        <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical"
+		        android:layout_marginTop="25dp"
+		        android:text="@string/inf_sociodem"
+				android:textStyle="bold"
+				android:textColor="#000000"
+				android:textAppearance="?android:attr/textAppearanceLarge"	/>	        
+	    </LinearLayout>
+	    
+	
+	<RadioGroup 
+	    android:id="@+id/conjugal"
+	    android:layout_marginTop="30dp"
+	    android:orientation="vertical">	   
+	    
+	<TextView 
+	    android:text="@string/conjugal"
+	    android:textColor="#000000"
+	    android:layout_marginBottom="20dp"	/>
+	    
+	    
+	    <RadioButton	
+	        android:id="@+id/solteiro"
+	        android:checked="true"
+	        android:textColor="#000000"
+	        android:text="@string/solteiro" />
+	    
+	    <RadioButton	
+	        android:id="@+id/casado"
+	        android:textColor="#000000"
+	        android:text="@string/casado" />
+	    
+		<RadioButton	
+		    android:id="@+id/divorciado"
+		    android:textColor="#000000"
+		    android:text="@string/divorciado" />	    
+	    
+	    
+		<RadioButton	
+		    android:id="@+id/viuvo"
+		    android:textColor="#000000"
+		    android:text="@string/viuvo" />	 
+		    
+		<RadioButton 
+		    android:id="@+id/outro"
+		    android:textColor="#000000"
+		    android:text="@string/outro"	/>
+		
+	</RadioGroup>
+	
+	<EditText 
+	    android:id="@+id/ocupacao"
+	    android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+	    android:ems="10"
+	    android:inputType="text"
+	    android:hint="@string/ocupacao"	/>
+	
+	<RadioGroup 
+	    android:id="@+id/frequenta_escola"
+	    android:orientation="horizontal"	>
+	   
+		
+	<TextView 
+	    android:text="@string/frequenta_escola"
+	    android:textColor="#000000"	/>
+	    
+	    <RadioButton
+	        android:id="@+id/sim_sociodem"
+	        android:checked="true"
+	        android:textColor="#000000"
+	        android:text="@string/sim"	 />
+	    
+	    <RadioButton
+	        android:id="@+id/nao_sociodem"
+	        android:textColor="#000000"
+	        android:text="@string/nao"	 />
+	</RadioGroup>
+	
+	<RadioGroup
+	    android:id="@+id/curso_feito"
+	    android:orientation="vertical"
+	    android:background="@drawable/retangulo"  >
+	    
+	    <TextView
+	        android:text="@string/curso_feito"
+	        android:textColor="#000000" />
+	    
+	    <RadioButton
+	        android:id="@+id/creche"
+	        android:textColor="#000000"
+	        android:checked="true"
+	        android:text="@string/creche" />
+	    
+	    <RadioButton
+	        android:id="@+id/pre_escola"
+	        android:textColor="#000000"
+	        android:text="@string/pre_escola" />
+	    
+	    <RadioButton
+	        android:id="@+id/classe_alfabetizada"
+	        android:textColor="#000000"
+	        android:text="@string/classe_alfabetizada" />
+	    
+	    <RadioButton
+	        android:id="@+id/fundamental1"
+	        android:textColor="#000000"
+	        android:text="@string/fundamental1" />
+	    
+	    <RadioButton
+	        android:id="@+id/fundamental2"
+	        android:textColor="#000000"
+	        android:text="@string/fundamental2" />
+	    
+	    <RadioButton
+	        android:id="@+id/fundamental_completo"
+	        android:textColor="#000000"
+	        android:text="@string/fundamental_completo" />
+	    
+	    <RadioButton
+	        android:id="@+id/fundamental_especial"
+	        android:textColor="#000000"
+	        android:text="@string/fundamental_especial" />
+	    
+	    <RadioButton
+	        android:id="@+id/fundamental_eja_inicial"
+	        android:textColor="#000000"
+	        android:text="@string/fundamental_eja_inicial" />
+	    
+	    <RadioButton
+	        android:id="@+id/fundamental_eja_final"
+	        android:textColor="#000000"
+	        android:text="@string/fundamental_eja_final" />
+	    
+	    <RadioButton
+	        android:id="@+id/medio"
+	        android:textColor="#000000"
+	        android:text="@string/medio" />
+	    
+	    <RadioButton
+	        android:id="@+id/medio_especial"
+	        android:textColor="#000000"
+	        android:text="@string/medio_especial" />
+	    
+	    <RadioButton
+	        android:id="@+id/medio_eja"
+	        android:textColor="#000000"
+	        android:text="@string/medio_eja" />
+	    
+	    <RadioButton
+	        android:id="@+id/superior"
+	        android:textColor="#000000"
+	        android:text="@string/superior" />
+	    
+	    <RadioButton
+	        android:id="@+id/alfabetizacao_adultos"
+	        android:textColor="#000000"
+	        android:text="@string/alfabetizacao_adultos" />
+	    
+	    <RadioButton
+	        android:id="@+id/nenhum"
+	        android:textColor="#000000"
+	        android:text="@string/nenhum" />    
+	    
+	</RadioGroup>
+	
+	<RadioGroup
+	    android:id="@+id/mercado_trabalho"
+	    android:orientation="vertical"
+	    android:layout_marginTop="10dp"
+	    android:background="@drawable/retangulo" >
+	    
+	    
+	    <TextView
+	        android:text="@string/mercado_trabalho"
+	        android:textColor="#000000"	/>
+	    
+	    <RadioButton
+	        android:id="@+id/empregador"
+	        android:textColor="#000000"
+	        android:text="@string/empregador" />  
+	        
+	    <RadioButton
+	        android:id="@+id/assalariado_carteira"
+	        android:textColor="#000000"
+	        android:text="@string/assalariado_carteira" />  
+	        
+	    <RadioButton
+	        android:id="@+id/assalariado_semcarteira"
+	        android:textColor="#000000"
+	        android:text="@string/assalariado_semcarteira" />  
+	        
+	    <RadioButton
+	        android:id="@+id/autonomo_prev"
+	        android:textColor="#000000"
+	        android:text="@string/autonomo_prev" />  
+	        
+	    <RadioButton
+	        android:id="@+id/autonomo_semprev"
+	        android:textColor="#000000"
+	        android:text="@string/autonomo_semprev" />  
+	        
+	    <RadioButton
+	        android:id="@+id/aposentado"
+	        android:textColor="#000000"
+	        android:text="@string/aposentado" />  
+	        
+	    <RadioButton
+	        android:id="@+id/desempregado"
+	        android:textColor="#000000"
+	        android:text="@string/desempregado" />  
+	        
+	    <RadioButton
+	        android:id="@+id/nao_trabalha"
+	        android:textColor="#000000"
+	        android:text="@string/nao_trabalha" />  
+	        
+	    <RadioButton
+	        android:id="@+id/trabalho_outro"
+	        android:textColor="#000000"
+	        android:text="@string/outro" />  
+	    
+	</RadioGroup>
+	
+	<RadioGroup
+	    android:id="@+id/criancas_guarda"
+	    android:orientation="vertical"
+	    android:background="@drawable/retangulo"
+	    android:layout_marginTop="10dp" >
+	    
+	    <TextView
+	        android:text="@string/criancas_guarda"
+	        android:textColor="#000000"	/>
+	         
+	    <RadioButton
+	        android:id="@+id/adulto_responsavel"
+	        android:textColor="#000000"
+	        android:text="@string/adulto_responsavel" />
+	    
+	    <RadioButton
+	        android:id="@+id/outra_crianca"
+	        android:textColor="#000000"
+	        android:text="@string/outra_crianca" />
+	    
+	    <RadioButton
+	        android:id="@+id/adolescente"
+	        android:textColor="#000000"
+	        android:text="@string/adolescente" />
+	    
+	    <RadioButton
+	        android:id="@+id/sozinha"
+	        android:textColor="#000000"
+	        android:text="@string/sozinha" />
+	    
+	    <RadioButton
+	        android:id="@+id/creche2"
+	        android:textColor="#000000"
+	        android:text="@string/creche" />
+	    
+	    <RadioButton
+	        android:id="@+id/outro2"
+	        android:textColor="#000000"
+	        android:text="@string/outro" />	    
+	    
+	</RadioGroup>
+	
+	<TextView
+	    android:text="@string/curandeiro"
+	    android:textColor="#000000" />
+	
+	<RadioGroup
+	    android:id="@+id/curandeiro"
+	    android:orientation="horizontal" >
+	    
+	    <RadioButton
+	        android:id="@+id/curandeiro_sim"
+	        android:checked="true"
+	        android:textColor="#000000"
+	        android:text="@string/sim" />	
+		
+	    <RadioButton
+	        android:id="@+id/curandeiro_nao"
+	        android:textColor="#000000"
+	        android:text="@string/nao" />		    
+	    
+	</RadioGroup>
+	
+	<TextView
+	    android:text="@string/grupo_comunitario"
+	    android:textColor="#000000" />
+	
+	<RadioGroup
+	    android:id="@+id/grupo_comunitario"
+	    android:orientation="horizontal" >
+	    
+	    <RadioButton
+	        android:id="@+id/grupo_comunitario_sim"
+	        android:checked="true"
+	        android:textColor="#000000"
+	        android:text="@string/sim" />	
+		
+	    <RadioButton
+	        android:id="@+id/grupo_comunitario_nao"
+	        android:textColor="#000000"
+	        android:text="@string/nao" />		    
+	    
+	</RadioGroup>
+	
+	<TextView
+	    android:text="@string/plano_saude"
+	    android:textColor="#000000" />
+	
+	<RadioGroup
+	    android:id="@+id/plano_saude"
+	    android:orientation="horizontal" >
+	    
+	    <RadioButton
+	        android:id="@+id/plano_saude_sim"
+	        android:checked="true"
+	        android:textColor="#000000"
+	        android:text="@string/sim" />	
+		
+	    <RadioButton
+	        android:id="@+id/plano_saude_nao"
+	        android:textColor="#000000"
+	        android:text="@string/nao" />		    
+	    
+	</RadioGroup>
+	
+	<TextView
+	    android:text="@string/membro_comunidade"
+	    android:textColor="#000000" />
+	
+	<RadioGroup
+	    android:id="@+id/membro_comunidade"
+	    android:orientation="horizontal"
+	    android:background="@drawable/retangulo" >
+	    
+	    <RadioButton
+	        android:id="@+id/membro_comunidade_sim"
+	        android:checked="true"
+	        android:textColor="#000000"
+	        android:text="@string/sim" />	
+		
+	    <RadioButton
+	        android:id="@+id/membro_comunidade_nao"
+	        android:textColor="#000000"
+	        android:text="@string/nao" />		
+	</RadioGroup>
+		
+	<EditText
+	    android:id="@+id/membro_comunidade2"
+	    android:textColor="#000000"
+	    android:hint="@string/se_sim_qual"
+	    android:inputType="text" />
+	
+	
+	<TextView
+	    android:text="@string/orientacao_sexual"
+	    android:textColor="#000000" />
+	
+	<RadioGroup
+	    android:id="@+id/orientacao_sexual"
+	    android:orientation="horizontal" >
+	    
+	    <RadioButton
+	        android:id="@+id/orientacao_sexual_sim"
+	        android:checked="true"
+	        android:textColor="#000000"
+	        android:text="@string/sim" />	
+		
+	    <RadioButton
+	        android:id="@+id/orientacao_sexual_nao"
+	        android:textColor="#000000"
+	        android:text="@string/nao" />		    
+	    
+	</RadioGroup>
+	
+	
+	<RadioGroup
+	    android:id="@+id/orientacao_sexual2"
+	    android:orientation="vertical"
+	    android:background="@drawable/retangulo" >
+	    
+	<TextView
+	    android:text="@string/se_sim_qual"
+	    android:textColor="#000000" />
+	    
+	    
+	    <RadioButton
+	        android:id="@+id/hetero"
+	        android:checked="true"
+	        android:textColor="#000000"
+	        android:text="@string/hetero" />	
+		
+	    <RadioButton
+	        android:id="@+id/gay"
+	        android:textColor="#000000"
+	        android:text="@string/gay" />		    
+	    
+	    <RadioButton
+	        android:id="@+id/lesbica"
+	        android:textColor="#000000"
+	        android:text="@string/lesbica" />		    
+	    
+	    <RadioButton
+	        android:id="@+id/bissexual"
+	        android:textColor="#000000"
+	        android:text="@string/bissexual" />		    
+	    
+	    <RadioButton
+	        android:id="@+id/travesti"
+	        android:textColor="#000000"
+	        android:text="@string/travesti" />		    
+	    
+	    <RadioButton
+	        android:id="@+id/transexual"
+	        android:textColor="#000000"
+	        android:text="@string/transexual" />		    
+	    
+	    <RadioButton
+	        android:id="@+id/sexo_outro"
+	        android:textColor="#000000"
+	        android:text="@string/outro" />		    
+	    	    
+	</RadioGroup>
+	
+	<TextView
+	    android:text="@string/deficiencia"
+	    android:textColor="#000000" />
+	
+	<RadioGroup
+	    android:id="@+id/deficiencia"
+	    android:orientation="horizontal" >
+	    
+	    <RadioButton
+	        android:id="@+id/deficiencia_sim"
+	        android:checked="true"
+	        android:textColor="#000000"
+	        android:text="@string/sim" />	
+		
+	    <RadioButton
+	        android:id="@+id/deficiencia_nao"
+	        android:textColor="#000000"
+	        android:text="@string/nao" />		    
+	    
+	</RadioGroup>
+	
+	<RadioGroup
+	    android:id="@+id/deficiencia2"
+	    android:orientation="vertical"
+	    android:background="@drawable/retangulo" >
+	    
+	<TextView
+	    android:text="@string/se_sim_qual"
+	    android:textColor="#000000" />
+	    
+	    
+	    <RadioButton
+	        android:id="@+id/auditiva"
+	        android:checked="true"
+	        android:textColor="#000000"
+	        android:text="@string/auditiva" />	
+		
+	    <RadioButton
+	        android:id="@+id/visual"
+	        android:textColor="#000000"
+	        android:text="@string/visual" />		    
+	    
+	    <RadioButton
+	        android:id="@+id/intelectual"
+	        android:textColor="#000000"
+	        android:text="@string/intelectual" />		    
+	    
+	    <RadioButton
+	        android:id="@+id/fisica"
+	        android:textColor="#000000"
+	        android:text="@string/fisica" />	    
+	    
+	    <RadioButton
+	        android:id="@+id/deficiencia_outro"
+	        android:textColor="#000000"
+	        android:text="@string/outro" />		    
+	    	    
+	</RadioGroup>
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+		android:layout_marginTop="25dp"
+		android:text="@string/rua1"
+		android:textStyle="bold"
+		android:textColor="#000000"	/>
+	
+	<RadioGroup
+	    android:layout_marginTop="10dp"
+	    android:id="@+id/em_rua"
+	    android:orientation="horizontal"
+	    android:background="@drawable/retangulo"	 >
+	    
+	    <TextView
+	    android:text="@string/em_rua"
+	    android:textColor="#000000" />
+	    
+	    <RadioButton
+	        android:textColor="#000000"
+	        android:text="@string/sim" />
+	    
+	    <RadioButton
+	        android:textColor="#000000"
+	        android:text="@string/nao" />
+	    
+	     <TextView
+		    android:text="@string/obs_rua"
+		    android:layout_marginLeft="15dp"
+		    android:textColor="#000000" />
+	    
+	</RadioGroup>
+	
+		
+	<RadioGroup
+	   android:layout_marginTop="10dp"
+	    android:id="@+id/tempo_rua"
+	    android:orientation="horizontal"
+	    android:background="@drawable/retangulo" >
+	     
+		<TextView
+		    android:text="@string/tempo_rua"
+		    android:textColor="#000000" />
+	
+		<RadioButton 
+	        android:textColor="#000000"
+	        android:text="@string/meses6"	/>
+		
+		<RadioButton
+	        android:textColor="#000000"
+	        android:text="@string/meses6a12"	/>
+		
+		<RadioButton 
+		     android:textColor="#000000"
+	        android:text="@string/anos1a5"	/>
+		
+		<RadioButton 
+	        android:textColor="#000000"
+	        android:text="@string/anos5"	/>
+		
+	</RadioGroup>
+	
+	<RadioGroup 
+	    android:id="@+id/beneficio"
+	    android:orientation="horizontal"
+	    android:layout_marginTop="10dp"
+	    android:background="@drawable/retangulo"	>
+	     
+	     <TextView
+		    android:text="@string/beneficio"
+		    android:textColor="#000000" />
+		    
+	    <RadioButton 
+	        android:textColor="#000000"
+	        android:text="@string/sim"	/>
+	    
+	    <RadioButton 
+	        android:textColor="#000000"
+	        android:text="@string/nao"	/>
+	</RadioGroup>
+	
+	<RadioGroup 
+	    android:id="@+id/referencia"
+	    android:orientation="horizontal"
+	    android:layout_marginTop="10dp"
+	    android:background="@drawable/retangulo"	>
+	     
+	     <TextView
+		    android:text="@string/referencia"
+		    android:textColor="#000000" />
+		    
+	    <RadioButton 
+	        android:textColor="#000000"
+	        android:text="@string/sim"	/>
+	    
+	    <RadioButton 
+	        android:textColor="#000000"
+	        android:text="@string/nao"	/>	    
+	</RadioGroup>
+				    
+	<TableLayout	   
+	    android:layout_marginTop="10dp"
+	    android:background="@drawable/retangulo"  >
+	    
+		<RadioGroup 
+		    android:id="@+id/instituicao"
+		    android:orientation="horizontal">
+		     
+		     <TextView
+			    android:text="@string/instituicao"
+			    android:textColor="#000000" />
+			    
+		    <RadioButton 
+		        android:textColor="#000000"
+		        android:text="@string/sim"	/>
+		    
+		    <RadioButton 
+		        android:textColor="#000000"
+		        android:text="@string/nao"	/>	    
+		</RadioGroup>
+	
+		<EditText
+		    android:id="@+id/qual_instituicao"
+		    android:textColor="#000000"
+		    android:hint="@string/se_sim_qual"
+		    android:inputType="text" />	
+	</TableLayout>
+	
+	<TableLayout 
+	   	android:layout_marginTop="10dp"
+	    android:background="@drawable/retangulo" >
+		
+	    <RadioGroup 
+		    android:id="@+id/visita"
+		    android:orientation="horizontal">
+		     
+		     <TextView
+			    android:text="@string/visita"
+			    android:textColor="#000000" />
+			    
+		    <RadioButton 
+		        android:textColor="#000000"
+		        android:text="@string/sim"	/>
+		    
+		    <RadioButton 
+		        android:textColor="#000000"
+		        android:text="@string/nao"	/>	    
+		</RadioGroup>
+	
+		<EditText
+		    android:id="@+id/qual_visita"
+		    android:textColor="#000000"
+		    android:hint="@string/se_sim_qual_grau"
+		    android:inputType="text" />	
+	    
+	</TableLayout>
+		   
+	<Button 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginTop="30dp"
+	        android:onClick="salvarOnClick"
+	        android:text="@string/salvar"	/>
+	
+	</TableLayout>
+	    
+</ScrollView>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutcadastro"
+    tools:context=".NovoCadastroActivity" >
+    
+    <TableLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:stretchColumns="0,1,2"
+	   	android:background="#AEDD94"	>
+	    	
+
+    <LinearLayout
+        android:orientation="vertical" >
+        
+        <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/id_usuario"
+	        android:layout_marginBottom="20dp" />
+
+     </LinearLayout>   
+        
+	    <EditText
+	        android:id="@+id/cartao_sus"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:hint="@string/cartao"
+	        android:inputType="numberSigned" >
+	
+	        <requestFocus />
+	    </EditText>
+        
+	    <TableLayout 
+	       android:background="@drawable/retangulo" >
+	    
+	    <RadioGroup 
+	        android:id="@+id/responsavel"	        
+	        android:orientation="horizontal"	>	        		    
+		    
+		    <TextView 
+		        android:text="@string/responsavel"
+		        android:textColor="#000000"	/>
+		    
+	        <RadioButton 
+	            android:id="@+id/responsavel_sim"
+	            android:checked="true"
+	            android:textColor="#000000"
+	            android:text="@string/sim"	/>
+	        
+	        <RadioButton 
+	            android:id="@+id/responsavel_nao"
+				android:layout_marginLeft="30dp"
+				android:textColor="#000000"
+	            android:text="@string/nao"	/>	
+	            
+	        <TextView 
+	            android:layout_marginLeft="40dp"
+	            android:text="@string/obs_responsavel"
+		        android:textColor="#000000" />
+	     </RadioGroup>
+	     
+	     <EditText
+		        android:id="@+id/cartao_sus2"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:ems="10"
+		        android:hint="@string/cartao" 
+		        android:inputType="numberSigned">	    	
+	    	</EditText>
+	    	
+	        <EditText
+		        android:id="@+id/aniversario2"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:ems="10"
+		        android:hint="@string/nascimento"
+		        android:inputType="numberSigned" >		
+		  </EditText>
+	    </TableLayout>
+	    
+	    <EditText
+	        android:id="@+id/nome"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:hint="@string/nome"
+	        android:inputType="textPersonName|textCapWords" >
+	
+	    </EditText>
+        
+        <EditText
+	        android:id="@+id/nome_social"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:hint="@string/social"
+	        android:inputType="textPersonName" >
+	
+	    </EditText>
+        
+        <EditText
+	        android:id="@+id/aniversario"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="numberSigned"
+	        android:hint="@string/nascimento" >
+	
+	    </EditText>
+        
+        <RadioGroup 
+	        android:id="@+id/sexo"
+	        android:background="@drawable/retangulo"
+	        android:orientation="horizontal"	>	        		    
+		    
+		    <TextView 
+		        android:text="@string/sexo"
+		        android:textColor="#000000"	/>
+		    
+	        <RadioButton 
+	            android:id="@+id/masculino"
+	            android:checked="true"
+	            android:textColor="#000000"
+	            android:text="@string/masculino"	/>
+	        
+	        <RadioButton 
+	            android:id="@+id/feminino"
+				android:layout_marginLeft="30dp"
+				android:textColor="#000000"
+	            android:text="@string/feminino"	/>		            
+		</RadioGroup>
+		
+         <RadioGroup 
+	        android:id="@+id/raca"
+			android:layout_marginTop="5dp"
+	        android:background="@drawable/retangulo"
+	        android:orientation="horizontal"	>	        		    
+		    
+		    <TextView 
+		        android:text="@string/cor"
+		        android:textColor="#000000"	/>
+		    
+	        <RadioButton 
+	            android:id="@+id/branca"
+	            android:checked="true"
+	            android:textColor="#000000"
+	            android:text="@string/branca"	/>
+	        
+	        <RadioButton 
+	            android:id="@+id/preta"
+				android:layout_marginLeft="10dp"
+				android:textColor="#000000"
+	            android:text="@string/preta"	/>	
+			<RadioButton 
+	          	android:id="@+id/parda"
+				android:layout_marginLeft="10dp"
+				android:textColor="#000000"
+	            android:text="@string/parda"	/>	
+	        <RadioButton 
+	            android:id="@+id/amarela"
+				android:layout_marginLeft="10dp"
+				android:textColor="#000000"
+	            android:text="@string/amarela"	/>	
+			<RadioButton 
+	            android:id="@+id/indigena"
+				android:layout_marginLeft="10dp"
+				android:textColor="#000000"
+	            android:text="@string/indigena"	/>		            
+	     </RadioGroup>
+	        
+        <RadioGroup 
+	        android:id="@+id/nacionalidade"
+	        android:layout_marginTop="5dp"
+	        android:background="@drawable/retangulo"
+	        android:orientation="horizontal"	>	        		    
+		    
+		    <TextView 
+		        android:text="@string/nacionalidade"
+		        android:textColor="#000000"	/>
+		    
+	        <RadioButton 
+	            android:id="@+id/brasileira"
+	            android:checked="true"
+	            android:textColor="#000000"
+	            android:text="@string/brasileira"	/>
+	        
+	        <RadioButton 
+	            android:id="@+id/naturalizado"
+				android:layout_marginLeft="15dp"
+				android:textColor="#000000"
+	            android:text="@string/naturalizado"	/>
+	        <RadioButton 
+	            android:id="@+id/estrangeiro"
+				android:layout_marginLeft="15dp"
+				android:textColor="#000000"
+	            android:text="@string/estrangeiro"	/>		            
+		</RadioGroup>
+                
+        <EditText
+	        android:id="@+id/nis"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:hint="@string/nis"
+	        android:inputType="numberSigned" >
+	
+	    </EditText>
+        
+        <EditText
+	        android:id="@+id/nome_mae"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:hint="@string/mae"
+	        android:inputType="textPersonName" >
+	
+	    </EditText>
+        
+        <EditText
+	        android:id="@+id/pais"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:hint="@string/pais"
+	        android:inputType="text" >
+	
+	    </EditText>
+        
+        <EditText
+	        android:id="@+id/municipio"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:hint="@string/municipio"
+	        android:inputType="text" >
+	
+	    </EditText>
+	    
+        <EditText
+	        android:id="@+id/telefone"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="numberSigned"
+	        android:hint="@string/telefone" >
+	
+	    </EditText>
+        
+        <EditText
+	        android:id="@+id/email"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:ems="10"
+	        android:inputType="textEmailAddress"
+	        android:hint="@string/email" >
+	
+	    </EditText>
+	    
+        <Button
+	        android:id="@+id/button1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/salvar" 
+	        android:layout_gravity="right"
+	        android:onClick="salvarCadastro" />
+    
+	    <Button
+	        android:id="@+id/button2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/editar" 
+	        android:layout_gravity="right"
+	        android:onClick="editarCadastro"
+	        android:visibility="gone" />
+	            
+	</TableLayout> 
+</ScrollView>

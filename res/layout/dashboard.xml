@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.teste.activitys.ListCadastroActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#AEDD94"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:text="@string/ficha_cadastro_unico"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#AEDD94" >
+
+            <TextView
+                android:id="@+id/id_usuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:background="#FEF67F"
+                android:clickable="true"
+                android:onClick="selecionarOpcao"
+                android:padding="20dp"
+                android:text="@string/id_usuario"
+                android:textColor="#000000" />
+
+            
+
+            <TextView
+                android:id="@+id/inf_sociodem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/id_usuario"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="85dp"
+                android:background="#FEF67F"
+                android:clickable="true"
+                android:onClick="selecionarOpcao"
+                android:padding="20dp"
+                android:text="@string/inf_sociodem"
+                android:textColor="#000000" />
+
+            
+
+            <TextView
+                android:id="@+id/condicoes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/inf_sociodem"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="85dp"
+                android:background="#FEF67F"
+                android:clickable="true"
+                android:onClick="selecionarOpcao"
+                android:padding="20dp"
+                android:text="@string/condicoes"
+                android:textColor="#000000" />
+
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/condicoes"
+                android:layout_marginTop="10dp"
+                android:text="@string/separador" />
+            
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

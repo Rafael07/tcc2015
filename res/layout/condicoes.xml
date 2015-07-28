@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    
+    <TableLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:stretchColumns="0,1,2"
+	   	android:background="#AEDD94"	>
+    
+    
+    <LinearLayout
+        android:orientation="vertical" >
+        
+        <TextView 
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_vertical"
+		        android:layout_marginTop="25dp"
+		        android:text="@string/condicoes"
+				android:textStyle="bold"
+				android:textColor="#000000"
+				android:textAppearance="?android:attr/textAppearanceLarge"	/>        
+    </LinearLayout>
+    
+    
+    <RadioGroup
+        android:id="@+id/gestante"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >       
+        
+	    <TextView 
+	        android:text="@string/gestante"
+	        android:textColor="#000000" />
+    
+        <RadioButton 
+            android:id="@+id/gestante_sim"
+            android:textColor="#000000"
+            android:text="@string/sim" />
+        
+        <RadioButton 
+            android:id="@+id/gestante_nao"
+            android:textColor="#000000"
+            android:text="@string/nao" />
+    </RadioGroup>
+    	
+	<EditText 
+	    android:id="@+id/qual_maternidade"
+	    android:textColor="#000000"
+	    android:hint="@string/qual_maternidade"
+	    android:inputType="text"	/>
+    
+	<RadioGroup
+	    android:id="@+id/peso"
+	    android:layout_marginTop="10dp"
+	    android:background="@drawable/retangulo"
+	    android:orientation="vertical" >
+        
+	    <TextView 
+	        android:text="@string/peso"
+	        android:textColor="#000000" />
+	    
+	    <RadioButton 
+	        android:id="@+id/abaixo_peso"
+	        android:text="@string/abaixo_peso"
+	        android:textColor="#000000" />
+	    
+	    <RadioButton 
+	        android:id="@+id/ideal_peso"
+	        android:text="@string/ideal_peso"
+	        android:textColor="#000000" />
+	    
+	    <RadioButton 
+	        android:id="@+id/acima_peso"
+	        android:text="@string/acima_peso"
+	        android:textColor="#000000" />
+	    
+	</RadioGroup>
+	
+	
+	<RadioGroup 
+	    android:id="@+id/fumante"
+	    android:layout_marginTop="10dp"
+	    android:orientation="horizontal" >
+	    
+		<TextView 
+		    android:text="@string/fumante"
+		    android:textColor="#000000"  />
+	
+	    <RadioButton 
+	        android:text="@string/sim"
+	        android:textColor="#000000"  />
+	    
+	    <RadioButton 
+	        android:text="@string/nao"
+	        android:textColor="#000000"  />	    
+	</RadioGroup>
+    
+	<RadioGroup 
+	    android:id="@+id/alcool"
+	    android:layout_marginTop="10dp"
+	    android:orientation="horizontal" >
+	    
+		<TextView 
+		    android:text="@string/alcool"
+		    android:textColor="#000000"  />
+	
+	    <RadioButton 
+	        android:text="@string/sim"
+	        android:textColor="#000000"  />
+	    
+	    <RadioButton 
+	        android:text="@string/nao"
+	        android:textColor="#000000"  />	    
+	</RadioGroup>
+    
+	<RadioGroup 
+	    android:id="@+id/drogas"
+	    android:layout_marginTop="10dp"
+	    android:orientation="horizontal" >
+	    
+		<TextView 
+		    android:text="@string/drogas"
+		    android:textColor="#000000"  />
+	
+	    <RadioButton 
+	        android:text="@string/sim"
+	        android:textColor="#000000"  />
+	    
+	    <RadioButton 
+	        android:text="@string/nao"
+	        android:textColor="#000000"  />	    
+	</RadioGroup>
+	
+	<RadioGroup 
+	    android:id="@+id/hipertensao"
+	    android:layout_marginTop="10dp"
+	    android:orientation="horizontal" >
+	    
+		<TextView 
+		    android:text="@string/hipertensao"
+		    android:textColor="#000000"  />
+	
+	    <RadioButton 
+	        android:text="@string/sim"
+	        android:textColor="#000000"  />
+	    
+	    <RadioButton 
+	        android:text="@string/nao"
+	        android:textColor="#000000"  />	    
+	</RadioGroup>
+	
+	<RadioGroup 
+	    android:id="@+id/diabetes"
+	    android:layout_marginTop="10dp"
+	    android:orientation="horizontal" >
+	    
+		<TextView 
+		    android:text="@string/diabetes"
+		    android:textColor="#000000"  />
+	
+	    <RadioButton 
+	        android:text="@string/sim"
+	        android:textColor="#000000"  />
+	    
+	    <RadioButton 
+	        android:text="@string/nao"
+	        android:textColor="#000000"  />	    
+	</RadioGroup>
+	
+	<RadioGroup 
+	    android:id="@+id/derrame"
+	    android:layout_marginTop="10dp"
+	    android:orientation="horizontal" >
+	    
+		<TextView 
+		    android:text="@string/derrame"
+		    android:textColor="#000000"  />
+	
+	    <RadioButton 
+	        android:text="@string/sim"
+	        android:textColor="#000000"  />
+	    
+	    <RadioButton 
+	        android:text="@string/nao"
+	        android:textColor="#000000"  />	    
+	</RadioGroup>
+	
+	<RadioGroup 
+	    android:id="@+id/infarto"
+	    android:layout_marginTop="10dp"
+	    android:orientation="horizontal" >
+	    
+		<TextView 
+		    android:text="@string/infarto"
+		    android:textColor="#000000"  />
+	
+	    <RadioButton 
+	        android:text="@string/sim"
+	        android:textColor="#000000"  />
+	    
+	    <RadioButton 
+	        android:text="@string/nao"
+	        android:textColor="#000000"  />	    
+	</RadioGroup>
+	
+	<RadioGroup 
+	    android:id="@+id/cardiaco"
+	    android:layout_marginTop="10dp"
+	    android:orientation="horizontal" >
+	    
+		<TextView 
+		    android:text="@string/cardiaco"
+		    android:textColor="#000000"  />
+	
+	    <RadioButton 
+	        android:text="@string/sim"
+	        android:textColor="#000000"  />
+	    
+	    <RadioButton 
+	        android:text="@string/nao"
+	        android:textColor="#000000"  />	    
+	</RadioGroup>
+		    
+	<RadioGroup
+	    android:background="@drawable/retangulo" >	
+		
+		<TextView 
+		    android:text="@string/se_sim_qual"
+		    android:textColor="#000000"  />
+	
+	    <RadioButton 
+	        android:text="@string/insuficiencia"
+	        android:textColor="#000000"  />
+	    
+	    <RadioButton 
+	        android:text="@string/outro"
+	        android:textColor="#000000"  />	   
+	        
+	    <RadioButton 
+	        android:text="@string/nao_sabe"
+	        android:textColor="#000000"  />	   
+	    
+	</RadioGroup>
+	   
+	    <RadioGroup
+	        android:id="@+id/rins"
+	        android:layout_marginTop="10dp"
+	        android:orientation="horizontal" >
+	    
+	        <TextView 
+	            android:text="@string/rins"
+	            android:textColor="#000000"	/>
+	        
+	        <RadioButton
+	            android:text="@string/sim"
+	            android:textColor="#000000" />
+	        
+	        <RadioButton
+	            android:text="@string/nao"
+	            android:textColor="#000000" />	        
+	    </RadioGroup>
+	    
+	    
+	    <RadioGroup 
+	      android:orientation="vertical"
+	      android:background="@drawable/retangulo"  >
+	    	        
+	    <TextView 
+	        android:text="@string/se_sim_qual"
+	        android:textColor="#000000" />
+	    
+	    <RadioButton
+	        android:text="@string/renal"
+	        android:textColor="#000000" />
+	    
+	    <RadioButton
+	        android:text="@string/outro"
+	        android:textColor="#000000" />
+	    
+	    <RadioButton
+	        android:text="@string/nao_sabe"
+	        android:textColor="#000000" />
+	    
+	</RadioGroup>
+	
+	 <RadioGroup
+	        android:id="@+id/pulmao"
+	        android:layout_marginTop="10dp"
+	        android:orientation="horizontal" >
+	    
+	        <TextView 
+	            android:text="@string/pulmao"
+	            android:textColor="#000000"	/>
+	        
+	        <RadioButton
+	            android:text="@string/sim"
+	            android:textColor="#000000" />
+	        
+	        <RadioButton
+	            android:text="@string/nao"
+	            android:textColor="#000000" />
+	        
+	    </RadioGroup>
+	    	    
+	    <RadioGroup 
+	      android:orientation="vertical"
+	      android:background="@drawable/retangulo"  >
+	    	        
+	    <TextView 
+	        android:text="@string/se_sim_qual"
+	        android:textColor="#000000" />
+	    
+	    <RadioButton
+	        android:text="@string/asma"
+	        android:textColor="#000000" />
+	    
+	    <RadioButton
+	        android:text="@string/dpoc"
+	        android:textColor="#000000" />
+	    
+	    <RadioButton
+	        android:text="@string/outro"
+	        android:textColor="#000000" />
+	    
+	    <RadioButton
+	        android:text="@string/nao_sabe"
+	        android:textColor="#000000" />
+	    
+	</RadioGroup>
+	
+	<RadioGroup 
+	    android:id="@+id/hanseniase"
+	    android:layout_marginTop="10dp"
+	    android:orientation="horizontal" >
+	    
+		<TextView 
+		    android:text="@string/hanseniase"
+		    android:textColor="#000000"  />
+	
+	    <RadioButton 
+	        android:text="@string/sim"
+	        android:textColor="#000000"  />
+	    
+	    <RadioButton 
+	        android:text="@string/nao"
+	        android:textColor="#000000"  />	    
+	</RadioGroup>
+	
+	<RadioGroup 
+	    android:id="@+id/tuberculose"
+	    android:layout_marginTop="10dp"
+	    android:orientation="horizontal" >
+	    
+		<TextView 
+		    android:text="@string/tuberculose"
+		    android:textColor="#000000"  />
+	
+	    <RadioButton 
+	        android:text="@string/sim"
+	        android:textColor="#000000"  />
+	    
+	    <RadioButton 
+	        android:text="@string/nao"
+	        android:textColor="#000000"  />	    
+	</RadioGroup>
+	
+	<RadioGroup 
+	    android:id="@+id/cancer"
+	    android:layout_marginTop="10dp"
+	    android:orientation="horizontal" >
+	    
+		<TextView 
+		    android:text="@string/cancer"
+		    android:textColor="#000000"  />
+	
+	    <RadioButton 
+	        android:text="@string/sim"
+	        android:textColor="#000000"  />
+	    
+	    <RadioButton 
+	        android:text="@string/nao"
+	        android:textColor="#000000"  />	    
+	</RadioGroup>
+	    
+	<RadioGroup
+        android:id="@+id/internacao"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >       
+        
+	    <TextView 
+	        android:text="@string/internacao"
+	        android:textColor="#000000" />
+    
+        <RadioButton         
+            android:id="@+id/interno_sim"
+            android:textColor="#000000"
+            android:text="@string/sim" />
+        
+        <RadioButton     
+            android:id="@+id/interno_nao"        
+            android:textColor="#000000"
+            android:text="@string/nao" />
+    </RadioGroup>
+    	
+	<EditText 
+	    android:id="@+id/qual_causa"
+	    android:hint="@string/qual_causa"
+	    android:textColor="#000000"
+	    android:inputType="text"	/>    
+	
+	<RadioGroup
+        android:id="@+id/psiquiatra"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >       
+        
+	    <TextView 
+	        android:text="@string/psiquiatra"
+	        android:textColor="#000000" />
+    
+        <RadioButton        
+            android:id="@+id/psiquiatra_sim"  
+            android:textColor="#000000"
+            android:text="@string/sim" />
+        
+        <RadioButton           
+            android:id="@+id/psiquiatra_nao"  
+            android:textColor="#000000"
+            android:text="@string/nao" />
+    </RadioGroup>
+	
+	<RadioGroup
+        android:id="@+id/acamado"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >       
+        
+	    <TextView 
+	        android:text="@string/acamado"
+	        android:textColor="#000000" />
+    
+        <RadioButton           
+            android:id="@+id/acamado_sim" 
+            android:textColor="#000000"
+            android:text="@string/sim" />
+        
+        <RadioButton  
+            android:id="@+id/acamado_nao"           
+            android:textColor="#000000"
+            android:text="@string/nao" />
+    </RadioGroup>    
+	
+	<RadioGroup
+        android:id="@+id/domiciliado"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >       
+        
+	    <TextView 
+	        android:text="@string/domiciliado"
+	        android:textColor="#000000" />
+    
+        <RadioButton         
+            android:id="@+id/domiciliado_sim"   
+            android:textColor="#000000"
+            android:text="@string/sim" />
+        
+        <RadioButton      
+            android:id="@+id/domiciliado_nao"       
+            android:textColor="#000000"
+            android:text="@string/nao" />
+    </RadioGroup>    
+	
+	<RadioGroup
+	        android:id="@+id/plantas"
+	        android:layout_marginTop="10dp"
+	        android:orientation="horizontal" >
+	    
+	        <TextView 
+	            android:text="@string/plantas"
+	            android:textColor="#000000"	/>
+	        
+	        <RadioButton
+	            android:text="@string/sim"
+	            android:textColor="#000000" />
+	        
+	        <RadioButton
+	            android:text="@string/nao"
+	            android:textColor="#000000" />	        
+	    </RadioGroup>
+		
+	<EditText 
+	    android:id="@+id/plantas_medicinais"
+	    android:textColor="#000000"
+	    android:hint="@string/se_sim_qual"
+	    android:inputType="text" />
+	
+	<RadioGroup 
+	    android:id="@+id/praticas"
+	    android:layout_marginTop="10dp"
+	    android:orientation="vertical" >
+	    
+		<TextView 
+		    android:text="@string/praticas"
+		    android:textColor="#000000"  />
+	
+	    <RadioButton 
+	        android:text="@string/sim"
+	        android:textColor="#000000"  />
+	    
+	    <RadioButton 
+	        android:text="@string/nao"
+	        android:textColor="#000000"  />	    
+	</RadioGroup>
+	
+	<TextView 
+	    android:text="@string/outras_condicoes"
+	    android:textColor="#000000" />
+		
+	<EditText
+	    android:id="@+id/qual1"
+	    android:hint="@string/qual1"
+	    android:textColor="#000000"
+	    android:inputType="text" />
+	
+	<EditText
+	    android:id="@+id/qual2"
+	    android:hint="@string/qual2"
+	    android:textColor="#000000"
+	    android:inputType="text" />
+	
+	<EditText
+	    android:id="@+id/qual3"
+	    android:hint="@string/qual3"
+	    android:textColor="#000000"
+	    android:inputType="text" />
+	
+	<TextView 
+	    android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+		android:layout_marginTop="25dp"
+		android:text="@string/rua1"
+		android:textStyle="bold"
+		android:textColor="#000000"	/>
+	
+	<RadioGroup
+	    android:layout_marginTop="10dp"
+	    android:id="@+id/alimentacao"
+	    android:orientation="vertical"
+	    android:background="@drawable/retangulo"	 >
+	    
+	    <TextView
+	    android:text="@string/alimentacao"
+	    android:textColor="#000000" />
+	    
+	    <RadioButton
+	        android:id="@+id/umavez"
+	        android:textColor="#000000"
+	        android:text="@string/umavez" />
+	    
+	    <RadioButton
+	        android:id="@+id/duasvezes"
+	        android:textColor="#000000"
+	        android:text="@string/duasvezes" />
+	    
+	     <RadioButton
+	        android:id="@+id/tresmais"
+	        android:textColor="#000000"
+	        android:text="@string/tresmais" />
+	    
+	</RadioGroup>
+	
+		
+		<TextView
+		    android:text="@string/origemalimentacao"
+		    android:layout_marginTop="10dp"
+		    android:textColor="#000000" />
+	
+		<RadioButton 
+		    android:id="@+id/respopular"
+	        android:textColor="#000000"
+	        android:text="@string/respopular"	/>
+		
+		<RadioButton 
+		    android:id="@+id/doacaores"
+	        android:textColor="#000000"
+	        android:text="@string/doacaores"	/>
+		
+		<RadioButton 
+		    android:id="@+id/doacaoreligiao"
+	        android:textColor="#000000"
+	        android:text="@string/doacaoreligiao"	/>
+		
+		<RadioButton 
+		    android:id="@+id/doacaopopular"
+	        android:textColor="#000000"
+	        android:text="@string/doacaopopular"	/>
+		
+		<RadioButton 
+		    android:id="@+id/outros"
+	        android:textColor="#000000"
+	        android:text="@string/outros"	/>
+		
+		
+	<RadioGroup 
+	    android:id="@+id/higiene"
+	    android:orientation="vertical"
+	    android:layout_marginTop="10dp"
+	    android:background="@drawable/retangulo"	>
+	     
+	     <TextView
+		    android:text="@string/higiene"
+		    android:textColor="#000000" />
+		    
+	    <RadioButton 
+	        android:id="@+id/higienesim"
+	        android:textColor="#000000"
+	        android:text="@string/sim"	/>
+	    
+	    <RadioButton 
+	        android:id="@+id/higienenao"
+	        android:textColor="#000000"
+	        android:text="@string/nao"	/>
+	    
+	</RadioGroup>
+				    
+		    <TextView 
+		        android:textColor="#000000"
+		        android:text="@string/se_sim_qual"	/>
+		    
+		    <RadioButton	
+		        android:id="@+id/banho"
+	        	android:textColor="#000000"
+	        	android:text="@string/banho"  />
+		    
+		    <RadioButton	
+		        android:id="@+id/sanitario"
+	        	android:textColor="#000000"
+	        	android:text="@string/sanitario"  />
+		    
+		    <RadioButton	
+		        android:id="@+id/bucal"
+	        	android:textColor="#000000"
+	        	android:text="@string/bucal"  />
+		    
+		    <RadioButton	
+		        android:id="@+id/outros2"
+	        	android:textColor="#000000"
+	        	android:text="@string/outro"  />	   
+		    
+	<Button 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginTop="30dp"
+	        android:onClick="salvarOnClick"
+	        android:text="@string/salvar"	/>
+	
+	
+	</TableLayout>
+	
+</ScrollView>
